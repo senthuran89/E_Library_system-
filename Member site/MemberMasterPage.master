@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MemberMasterPage.master.cs" Inherits="Member_site_MemberMasterPage" %>
+
+<%@ Register assembly="FlashControl" namespace="Bewise.Web.UI.WebControls" tagprefix="Bewise" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 15px;
+        }
+        .style2
+        {}
+        .style4
+        {
+            height: 309px;
+        }
+        .style5
+        {
+            height: 135px;
+        }
+        .style6
+        {
+            height: 309px;
+            width: 186px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table align="center" bgcolor="White" frame="box" 
+        style="width: 87%; height: 520px;">
+        <tr>
+            <td class="style5" colspan="2" align="left" valign="top">
+                <Bewise:FlashControl ID="FlashControl1" runat="server" Height="144px" 
+                    MovieUrl="~/Member site/images/44444.swf" Width="982px" Loop="True" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style1" colspan="2" align="left" valign="top" bgcolor="#99CCFF" 
+                height="20">
+                &nbsp;<asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="False" 
+                    Font-Names="Arial Unicode MS" Font-Overline="False" Font-Size="Medium" 
+                    Font-Underline="True" ForeColor="Black" 
+                    
+                    
+                    
+                    
+                    
+                    Text="  JAFFNA      (E)       LIBRARY                                                    "></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label3" runat="server" Text="." ForeColor="Black"></asp:Label>
+                <asp:ImageButton ID="ImageButton1" runat="server" 
+                    ImageUrl="~/icon/update_button.png" onclick="ImageButton1_Click" Width="16px" />
+                <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click" 
+                    Font-Underline="False" ForeColor="Black">Log Out</asp:LinkButton>
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td align="left" class="style6" valign="top" bgcolor="#99CCFF" height="40">
+                <asp:TreeView ID="TreeView1" runat="server" BackColor="#99CCFF" 
+                    DataSourceID="SiteMapDataSource1" Font-Bold="True" Font-Names="Times New Roman" 
+                    Font-Size="X-Large" Font-Underline="True" ForeColor="White" Height="322px" 
+                    ImageSet="Msdn" LineImagesFolder="~/TreeLineImages" NodeIndent="10" 
+                    Width="206px" Font-Italic="False" Font-Overline="False" 
+                    Font-Strikeout="False">
+                    <ParentNodeStyle Font-Bold="False" />
+                    <HoverNodeStyle Font-Underline="True" BackColor="#CCCCCC" BorderColor="#888888" 
+                        BorderStyle="Solid" />
+                    <SelectedNodeStyle Font-Underline="False" HorizontalPadding="3px" 
+                        VerticalPadding="1px" BackColor="White" BorderColor="#888888" 
+                        BorderStyle="Solid" BorderWidth="1px" />
+                    <DataBindings>
+                        <asp:TreeNodeBinding DataMember="SiteMapNode" NavigateUrl="~/Web.sitemap" 
+                            NavigateUrlField="Url" TextField="Title" />
+                        <asp:TreeNodeBinding />
+                    </DataBindings>
+                    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                        HorizontalPadding="5px" NodeSpacing="1px" VerticalPadding="2px" />
+                    <LeafNodeStyle ForeColor="Black" Font-Bold="True" Font-Italic="False" 
+                        Font-Names="Aharoni" Font-Size="Medium" />
+                </asp:TreeView>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                <br />
+            </td>
+            <td align="left" class="style4" style="border: thin inset #3399FF;" 
+                valign="top">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#99CCFF" class="style2" colspan="2" height="20">
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" 
+                    Font-Names="Times New Roman" ForeColor="Black" 
+                    Text="Copyright 2012.@ The Jaffna E Library Team.All rights reserved."></asp:Label>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

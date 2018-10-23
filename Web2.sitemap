@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Category">
+    <siteMapNode url="~/Admin/AddCategory.aspx" title="Add Category"  description="One" />
+    <siteMapNode url="~/Admin/Editcategory.aspx" title="Edit Category"  description="Two" />
+  </siteMapNode>
+</siteMap>

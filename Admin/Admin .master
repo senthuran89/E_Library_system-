@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin .master.cs" Inherits="Admin_Admin_" %>
+
+<%@ Register assembly="FlashControl" namespace="Bewise.Web.UI.WebControls" tagprefix="Bewise" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+        }
+        .style2
+        {
+            width: 196px;
+        }
+        .style3
+        {
+            height: 169px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table align="center" style="width: 81%;">
+        <tr>
+            <td align="left" bgcolor="#CCFFFF" colspan="2" valign="top" class="style3">
+                <Bewise:FlashControl ID="FlashControl1" runat="server" Height="174px" 
+                    MovieUrl="~/Member site/images/44444.swf" Width="1079px" />
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#99CCFF" class="style2" valign="top">
+                <asp:TreeView ID="TreeView1" runat="server" ImageSet="Contacts" NodeIndent="10">
+                    <ParentNodeStyle Font-Bold="True" ForeColor="#5555DD" />
+                    <HoverNodeStyle BackColor="#00CCFF" Font-Underline="False" 
+                        ForeColor="#0066FF" />
+                    <SelectedNodeStyle BackColor="Blue" BorderStyle="Groove" Font-Underline="True" 
+                        ForeColor="#0000CC" HorizontalPadding="0px" VerticalPadding="0px" />
+                    <Nodes>
+                        <asp:TreeNode NavigateUrl="~/Web2.sitemap" Text="Category" Value="New Node">
+                            <asp:TreeNode NavigateUrl="~/Admin/AddCategory.aspx" Text="Add Category" 
+                                Value="Add Category"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Admin/Editcategory.aspx" Text="Edit Category" 
+                                Value="Edit Category"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Book" Value="Book">
+                            <asp:TreeNode NavigateUrl="~/Admin/AddNewbook.aspx" Text="Add book" 
+                                Value="Add book"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Admin/EditBook.aspx" Text="Edit Book" 
+                                Value="Edit Book"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Admin/editauther.aspx" 
+                                Text="view &amp; Edit Auther" Value="view &amp; Edit Auther"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Lend Activites" Value="Lend Activites">
+                            <asp:TreeNode NavigateUrl="~/Admin/Memberorderview.aspx" 
+                                Text="Member Order View" Value="Member Order View"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Admin/memberLending.aspx" Text="Member Lending" 
+                                Value="Member Lending"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Admin/Memberreturn.aspx" Text="Member Return" 
+                                Value="Member Return"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Payment Activites" Value="Payment Activites">
+                            <asp:TreeNode NavigateUrl="~/Admin/MemberPayment.aspx" Text="Member Payments" 
+                                Value="Member Payments"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Admin Controls" Value="Admin Controls">
+                            <asp:TreeNode Text="Fain Control" 
+                                Value="Fain Control">
+                                <asp:TreeNode NavigateUrl="~/Admin/fainControl.aspx" Text="Add New Fainrate" 
+                                    Value="Add New Fainrate"></asp:TreeNode>
+                                <asp:TreeNode NavigateUrl="~/Admin/Editfain.aspx" Text="Edit Fainrate" 
+                                    Value="Edit Fainrate"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="User Control" Value="User Control">
+                                <asp:TreeNode NavigateUrl="~/Admin/UserControl.aspx" Text="Add new user" 
+                                    Value="Add new user"></asp:TreeNode>
+                                <asp:TreeNode NavigateUrl="~/Admin/edituser.aspx" Text="Edit user" 
+                                    Value="Edit user"></asp:TreeNode>
+                            </asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Balance Sheets" Value="New Node">
+                            <asp:TreeNode NavigateUrl="~/Admin/memberfees.aspx" Text="Member Fees" 
+                                Value="New Node"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Admin/fainfees.aspx" Text="Member Fain" 
+                                Value="Member Fain"></asp:TreeNode>
+                        </asp:TreeNode>
+                        <asp:TreeNode Text="Reports" Value="Reports">
+                            <asp:TreeNode NavigateUrl="~/Admin/BookOrderView.aspx" Text="Book Order view" 
+                                Value="Book Order view"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Admin/LendingBookdetails.aspx" Text="Lending View" 
+                                Value="Lending View"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Admin/ReturnBookdetails.aspx" Text="Return View" 
+                                Value="Return View"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Admin/reports.aspx" Text="Print Report" 
+                                Value="Print Report"></asp:TreeNode>
+                        </asp:TreeNode>
+                    </Nodes>
+                    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                        HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                </asp:TreeView>
+            </td>
+            <td valign="top">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p style="border: thin groove #99CCFF; background-color: #CCCCCC;">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+            </p>
+        
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#99CCFF" class="style1" colspan="2" valign="top">
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" 
+                    Font-Names="Times New Roman" ForeColor="Black" 
+                    Text="Copyright 2012.@ The Jaffna E Library Team.All rights reserved."></asp:Label>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    <siteMapNode url="~/Member site/Home.aspx" title="Library Home"  description="One" />
+    <siteMapNode url="~/Member site/NewArrivals.aspx" title="New Arrivals"  description="One" />
+    <siteMapNode url="~/Member site/Collection.aspx" title="Collections"  description="One" />
+    <siteMapNode url="~/Member site/Search.aspx" title="Search"  description="One" />    
+    <siteMapNode url="~/Member site/Login.aspx" title="Member Ship"  description="One" />
+    <siteMapNode url="~/Member site/RulesAndRegulation.aspx" title="Rules And Regulation"  description="One" />
+        <siteMapNode url="~/Member site/About.aspx" title="About"  description="One" />
+    <siteMapNode url="~/Member site/Contacts.aspx" title="Contacts"  description="One" />
+    <siteMapNode url="~/Member site/Adminlogon.aspx" title="Admin"  description="One" />
+  </siteMapNode>
+    
+  
+ 
+</siteMap>
